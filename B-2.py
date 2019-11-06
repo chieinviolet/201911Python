@@ -11,7 +11,6 @@ $ python kuku_2.py
 gyousuu = int(input("行数を入力してください>"))
 retsusuu = int(input("列数を入力してください>"))
 
-
 def kuku_2():
     for a in range(1, gyousuu + 1):
         for b in range(1, retsusuu + 1):
