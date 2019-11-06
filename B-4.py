@@ -27,6 +27,16 @@ def main():
     print(','.join(station_name))
     # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
 
+    def hukuoka_tempreture():
+        list_hukuoka = []
+        for hukuoka_i in range(6, 8):
+            list_hukuoka.append(weather_information[hukuoka_i]['temperature'])
+        print(sum(list_hukuoka) / len(list_hukuoka))
+
+    hukuoka_tempreture()
+
+
+
 
 if __name__ == '__main__':
     main()
