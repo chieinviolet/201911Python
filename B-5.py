@@ -15,8 +15,5 @@ def goukei():
     goukei_result = 0
     for num in nums:
         goukei_result = goukei_result + num
-    print(goukei_result)
-
-
-#     print (f'合計値は{goukei_result}です。')
+    print(f'合計値は{goukei_result}です。')
 goukei()
