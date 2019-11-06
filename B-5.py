@@ -6,8 +6,8 @@
 平均値: 6
 """
 
-# nums = [int(e) for e in input("データを入力して下さい>").split(" ")]
-nums = [10, 20, 15]
+nums = [int(e) for e in input("データを入力して下さい>").split(" ")]
+# nums = [10, 20, 15]
 
 """
 # sumを使わない合計値
@@ -53,6 +53,19 @@ def original_min():
         if num < min_add:
             min_add = num
     print(min_add)
-
-
 original_min()
+
+
+# 組み込み関数(mean, len, sum) を使わない 平均値
+def original_average():
+    total = 0
+    total_number = 0
+    for num in nums:
+        total += num
+        total_number += 1
+    average_result = total / total_number
+
+    print(average_result)
+
+
+original_average()
