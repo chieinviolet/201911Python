@@ -43,5 +43,16 @@ def original_max():
             max_add = num
     print(max_add)
 
-
 original_max()
+
+
+# maxを使わない最小値 numsの中身そのまま比べる
+def original_min():
+    min_add = nums[0]  # 初期値はnums[0]に設定
+    for num in nums:
+        if num < min_add:
+            min_add = num
+    print(min_add)
+
+
+original_min()
